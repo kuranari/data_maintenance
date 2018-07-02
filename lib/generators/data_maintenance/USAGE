@@ -1,0 +1,11 @@
+Description:
+    Stubs out a new data maintenance script. 
+    Pass the maintenance script name either CamelCased or under_scored.
+
+    A maintenance script is generated in db/maintenances.
+
+Example:
+    rails generate data_maintenance fix_user_name
+
+    This will create:
+        db/maintenances/fix_user_name.rb

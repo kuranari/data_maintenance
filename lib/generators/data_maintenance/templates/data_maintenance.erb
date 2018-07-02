@@ -1,0 +1,13 @@
+<% module_namespacing do -%>
+class <%= class_name %>Maintenance
+  def self.execute
+    # do something
+  end
+end
+
+realtime = Benchmark.realtime do
+  <%= class_name -%>Maintenance.execute
+end
+puts "realtime: #{realtime}"
+
+<% end -%>
